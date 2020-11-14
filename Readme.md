@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Глеб Лузик](https://up.htmlacademy.ru/adaptive/21/user/1491345).
-* Наставник: `Неизвестно`.
+* Наставник: Дарья Воздраганова.
 
 ---
 
