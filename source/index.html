@@ -6,33 +6,19 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav">
-      <div class="container">
-        <ul class="main-nav__list">
-          <li class="site-list__item">
-            <a href="#" class="page-header__logo">
-              <img src="https://via.placeholder.com/150x150">
-            </a>
-            <button type="button" class="main-nav__toggle">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </li>
-          <li class="site-list__item">
-            <ul class="main-nav__list">
-              <li class="site-list__item"><a href="#">Главная</a></li>
-              <li class="site-list__item"><a href="catalog.html">Фотографии</a></li>
-              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-              <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
-            </ul>
-          </li>
-        </ul>
+    <div class="page=header__main-inform container">
+      <div class="page-header__head">
+        <a class="head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
+        <button class="head-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-    </nav>
-  </header>
-  <main class="page__main">
-    <h1 class="visually-hidden">PINK Фильтры против серых будней</h1>
-
-    <section class="main-info">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="site-list__item"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
       <h2 class="main-info__slogan">Взгляни на жизнь иначе!</h2>
       <a href="#" class="main-info__download-button">Скачать приложение</a>
       <div class="main-info__social">
@@ -49,7 +35,11 @@
       <p class="main-info__social-text">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
-    </section>
+    </div>
+  </header>
+  <main class="page__main">
+
+    <h1 class="visually-hidden">PINK Фильтры против серых будней</h1>
 
     <section class="benefits">
       <h2 class="vissualy-hidden">Наши преимущества</h2>
@@ -93,9 +83,9 @@
           </li>
         </ul>
         <div class="reviews__toggle reviews-slider__toggles">
-            <button type="button" class="reviews-slider__toggle">1</button>
-            <button type="button" class="reviews-slider__toggle reviews-slider__toggle--active">2</button>
-            <button type="button" class="reviews-slider__toggle">3</button>
+          <button type="button" class="reviews-slider__toggle">1</button>
+          <button type="button" class="reviews-slider__toggle reviews-slider__toggle--active">2</button>
+          <button type="button" class="reviews-slider__toggle">3</button>
         </div>
       </div>
     </section>
