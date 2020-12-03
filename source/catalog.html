@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-body">
- <header class="page-header container">
-  <div class="page-header__intro">
-    <div class="page-header__head">
-      <a class="head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
-      <button class="page-header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-        <li class="main-nav__list-item"><a href="#">Фотографии</a></li>
-        <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__list-item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
-      </ul>
-    </nav>
-    <h1 class="page-header__heading">Фотографии пользователей</h2>
+  <header class="page-header container">
+    <div class="page-header__intro">
+      <div class="page-header__head">
+        <a class="head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
+        <button class="page-header__menu-toggle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__list-item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__list-item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
+      <h1 class="page-header__heading">Фотографии пользователей</h2>
     </div>
   </header>
   <main class="page__main main">
     <h2 class="visually-hidden">Все фотографии пользователей</h1>
       <div class="main__slogan">
         <div class="container">
-          <span class="main__slogan-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
+          <span class="main__slogan-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+            хватает ваших?</span>
         </div>
       </div>
 
@@ -43,7 +48,8 @@
             <span class="main-picture__user-name">Анна</span>
             <span class="main-picture__status">(5 минут назад)</span>
           </div>
-          <p class="main-picture__information-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="main-picture__information-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+            трансляцию в перископе, задавайте свои вопросы!</p>
           <span class="main-picture__like">Нравится: 215</span>
         </div>
       </section>
@@ -125,13 +131,13 @@
         <span class="other-picture__slogan-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</span>
       </section>
 
-
       <section class="main-filter">
         <form class="mian-filter__form" method="get" action="https://echo.htmlacademy.ru" id="filter-form">
           <img class="main-filter__main-img" src="https://via.placeholder.com/150x150">
           <ul class="main-filter__list">
             <li class="main-filter__item">
-              <button class="main-filter__button main-filter__button-crop main-filter__button--active" type="button" aria-label="Кнопка редактирования фото : обрезать"></button>
+              <button class="main-filter__button main-filter__button-crop main-filter__button--active" type="button"
+                aria-label="Кнопка редактирования фото : обрезать"></button>
               <div class="main-filter__range">
                 <div class="main-filter__range-line">
                   <div class="main-filter__range-circle"></div>
@@ -139,7 +145,8 @@
               </div>
             </li>
             <li class="main-filter__item">
-              <button class="main-filter__button main-filter__button-fill" type="button" aria-label="Кнопка редактирования фото : заливка"></button>
+              <button class="main-filter__button main-filter__button-fill" type="button"
+                aria-label="Кнопка редактирования фото : заливка"></button>
               <div class="main-filter__range">
                 <div class="main-filter__range-line">
                   <div class="main-filter__range-circle"></div>
@@ -147,7 +154,8 @@
               </div>
             </li>
             <li class="main-filter__item">
-              <button class="main-filter__button main-filter__button-contrast" type="button" aria-label="Кнопка редактирования фото : контрастность"></button>
+              <button class="main-filter__button main-filter__button-contrast" type="button"
+                aria-label="Кнопка редактирования фото : контрастность"></button>
               <div class="main-filter__range">
                 <div class="main-filter__range-line">
                   <div class="main-filter__range-circle"></div>
@@ -159,22 +167,25 @@
           <button class="main-filter__button clear-button" type="button">Отмена</button>
         </form>
       </section>
-    </main>
+  </main>
+  <footer class="page__footer footer">
+    <div class="footer-logo">
+      <img src="https://via.placeholder.com/150x150">
+    </div>
+    <div class="footer-social">
+      <ul class="footer-social__list">
+        <li class="footer-social__item footer-social__item--twiter"><a href="#"><span
+              class="visyalli-hidden">Twitter</span></a></li>
+        <li class="footer-social__item footer-social__item--facebook"><a href="#"><span
+              class="visyalli-hidden">Facebook</span></a></li>
+        <li class="footer-social__item footer-social__item--youtube"><a href="#"><span
+              class="visyalli-hidden">Youtube</span></a></li>
+      </ul>
+    </div>
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-developer">
+      Разработано
+    </a>
+  </footer>
+</body>
 
-    <footer class="page__footer footer">
-      <div class="footer-logo">
-        <img src="https://via.placeholder.com/150x150">
-      </div>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item footer-social__item--twiter"><a href="#"><span class="visyalli-hidden">Twitter</span></a></li>
-          <li class="footer-social__item footer-social__item--facebook"><a href="#"><span class="visyalli-hidden">Facebook</span></a></li>
-          <li class="footer-social__item footer-social__item--youtube"><a href="#"><span class="visyalli-hidden">Youtube</span></a></li>
-        </ul>
-      </div>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-developer">
-        Разработано
-      </a>
-    </footer>
-  </body>
-  </html>
+</html>
