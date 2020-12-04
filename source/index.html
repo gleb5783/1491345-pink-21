@@ -1,195 +1,202 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page__body">
   <header class="page-header">
-    <div class="page=header__main-inform container">
+    <div class="page-header__main-inform">
       <div class="page-header__head">
-        <a class="head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
-        <button class="head-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a class="page-header__head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
+        <button class="page-header__head-toggle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
         </ul>
       </nav>
-      <h2 class="main-info__slogan">Взгляни на жизнь иначе!</h2>
-      <a href="#" class="main-info__download-button">Скачать приложение</a>
-      <div class="main-info__social">
-        <a href="#" class="main-info__social-apple">
-          <span class="vissualy-hidden">Скачать для iphone</span>
+      <p class="page-header__slogan">Взгляни на жизнь иначе!</p>
+      <a href="#" class="page-header__download-button">Скачать приложение</a>
+      <div class="page-header__social">
+        <a href="#" class="page-header__social-apple">
+          <span class="visually-hidden">Скачать для iphone</span>
         </a>
-        <a href="#" class="main-info__social-android">
-          <span class="vissualy-hidden">Скачать для android</span>
+        <a href="#" class="page-header__social-android">
+          <span class="visually-hidden">Скачать для android</span>
         </a>
-        <a href="#" class="main-info__social-windows">
-          <span class="vissualy-hidden">Скачать для windows-phone</span>
+        <a href="#" class="page-header__social-windows">
+          <span class="visually-hidden">Скачать для windows-phone</span>
         </a>
       </div>
-      <p class="main-info__social-text">
+      <p class="page-header__social-text">
         Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
       </p>
     </div>
   </header>
-  <main class="page__main">
+  <main class="main">
 
     <h1 class="visually-hidden">PINK Фильтры против серых будней</h1>
 
     <section class="benefits">
-      <h2 class="vissualy-hidden">Наши преимущества</h2>
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="benefits__intro">
         <p class="benefits__intro-text">Устали от серости мегаполиса?</p>
         <p class="benefits__intro-text">Нам есть, что вам предлодить!</p>
       </div>
       <div class="benefits__main-features">
-        <ul class="main-features__list">
-          <li class="main-features__item">
-            <h3 class="main-features__item-heading">Поднимает настроение</h3>
-            <p class="main-features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <h3 class="benefits__item-heading">Поднимает настроение</h3>
+            <p class="benefits__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
           </li>
-          <li class="main-features__item">
-            <h3 class="main-features__item-heading">Меняет мир вокруг</h3>
-            <p class="main-features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="benefits__item">
+            <h3 class="benefits__item-heading">Меняет мир вокруг</h3>
+            <p class="benefits__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
           </li>
-          <li class="main-features__item">
-            <h3 class="main-features__item-heading">Заводит новых друзей</h3>
-            <p class="main-features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="benefits__item">
+            <h3 class="benefits__item-heading">Заводит новых друзей</h3>
+            <p class="benefits__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="reviews">
-      <div class="container reviews-slider">
-        <h2 class="vissualy-hidden">Отзывы о нас</h2>
-        <ul class="reviews__list reviews-slider__list">
-          <li class="reviews__item reviews-slider__item">
-            <h3 class="reviews__item__heading">Николай Петров</h3>
-            <p class="reviews__item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <div class="reviews__reviews-slider">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <h3 class="reviews__item-heading">Николай Петров</h3>
+            <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
           </li>
-          <li class="reviews__item reviews-slider__item">
-            <h3 class="reviews__item__heading">Николай Петров</h3>
-            <p class="reviews__item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <li class="reviews__item">
+            <h3 class="reviews__item-heading">Николай Петров</h3>
+            <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
           </li>
-          <li class="reviews__item reviews-slider__item">
-            <h3 class="reviews__item__heading">Николай Петров</h3>
-            <p class="reviews__item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <li class="reviews__item">
+            <h3 class="reviews__item-heading">Николай Петров</h3>
+            <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
           </li>
         </ul>
-        <div class="reviews__toggle reviews-slider__toggles">
-          <button type="button" class="reviews-slider__toggle">1</button>
-          <button type="button" class="reviews-slider__toggle reviews-slider__toggle--active">2</button>
-          <button type="button" class="reviews-slider__toggle">3</button>
+        <div class="reviews__toggle-btn">
+          <button type="button" class="reviews__slider-toggle">1</button>
+          <button type="button" class="reviews__slider-toggle reviews__slider-toggle--active">2</button>
+          <button type="button" class="reviews__slider-toggle">3</button>
         </div>
       </div>
     </section>
 
     <section class="price">
-      <h2 class="visualy-hidden">Наши тарифы</h2>
-      <div class="container">
-        <ul class="price__list">
-          <li class="price__item price__item--acide">
-            <ul class="price__list">
-              <li class="price__item">Розовый фильтр</li>
-              <li class="price__item">Смайлики</li>
-              <li class="price__item">Комментарии</li>
-            </ul>
-          </li>
-          <li class="price__item">
-            <header class="price__item-header">
-              <span class="price-hit"></span>
-              <h3>База</h3>
-              <p>1,99 usd</p>
-            </header>
-            <ul class="price__list">
-              <li class="price__item">Розовый фильтр</li>
-              <li class="price__item">Смайлики</li>
-              <li class="price__item">Комментарии</li>
-            </ul>
-          </li>
+      <h2 class="visually-hidden">Наши тарифы</h2>
+      <ul class="price__list">
+        <li class="price__item price__item--acide">
+          <ul class="price__list">
+            <li class="price__item">Розовый фильтр</li>
+            <li class="price__item">Смайлики</li>
+            <li class="price__item">Комментарии</li>
+          </ul>
+        </li>
+        <li class="price__item">
+          <header class="price__item-header">
+            <h3 class="price__tarif">База</h3>
+            <p>1,99 usd</p>
+          </header>
+          <ul class="price__list">
+            <li class="price__item">Розовый фильтр</li>
+            <li class="price__item">Смайлики</li>
+            <li class="price__item">Комментарии</li>
+          </ul>
+        </li>
 
-          <li class="price__item">
-            <header class="price__item-header">
-              <span class="price-hit"></span>
-              <h3>Стандарт</h3>
-              <p>3,99 usd</p>
-            </header>
-            <ul class="price__list">
-              <li class="price__item">Розовый фильтр</li>
-              <li class="price__item">Смайлики</li>
-              <li class="price__item">Комментарии</li>
-            </ul>
-          </li>
+        <li class="price__item">
+          <header class="price__item-header">
+            <span class="price__price-hit">Хит</span>
+            <h3 class="price__tarif">Стандарт</h3>
+            <p>3,99 usd</p>
+          </header>
+          <ul class="price__list">
+            <li class="price__item">Розовый фильтр</li>
+            <li class="price__item">Смайлики</li>
+            <li class="price__item">Комментарии</li>
+          </ul>
+        </li>
 
-          <li class="price__item">
-            <header class="price__item-header">
-              <span class="price-hit"></span>
-              <h3>Анлим</h3>
-              <p>9,99 usd</p>
-            </header>
-            <ul class="price__list">
-              <li class="price__item">Розовый фильтр</li>
-              <li class="price__item">Смайлики</li>
-              <li class="price__item">Комментарии</li>
-            </ul>
-          </li>
-        </ul>
-        <div class="reviews__toggle reviews-slider__toggles">
-          <button type="button" class="reviews-slider__toggle">1</button>
-          <button type="button" class="reviews-slider__toggle reviews-slider__toggle--active">2</button>
-          <button type="button" class="reviews-slider__toggle">3</button>
-        </div>
+        <li class="price__item">
+          <header class="price__item-header">
+            <h3 class="price__tarif">Анлим</h3>
+            <p>9,99 usd</p>
+          </header>
+          <ul class="price__list">
+            <li class="price__item">Розовый фильтр</li>
+            <li class="price__item">Смайлики</li>
+            <li class="price__item">Комментарии</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="price__toggle">
+        <button type="button" class="price__toggle">1</button>
+        <button type="button" class="price__toggle price__toggle--active">2</button>
+        <button type="button" class="price__toggle">3</button>
       </div>
     </section>
 
     <section class="feedback">
       <h1 class="visually-hidden">Обратная связь</h1>
-      <div class="container">
-        <div class="feedback__text">
-          <p class="feedback__subtitle">Остались вопросы?</p>
-          <p class="feedback__subtitle">Свяжитесь с нами!</p>
-        </div>
-        <ul class="feedback__list">
-          <li class="feedback__item">
-            <span class="feedback__item-text">Звоните:</span>
-            <a href="tel:+78125556666" class="feedback__tel">+7 (812) 555-66-66</a>
-          </li>
-          <li class="feedback__item">
-            <span class="feedback__item-text">Пишите:</span>
-            <a href="mailto:mail@htmlacademy.ru" class="feedback__email">mail@htmlacademy.ru</a>
-          </li>
-          <li class="feedback__item">
-            <span class="feedback__item-text">Приезжайте в гости:</span>
-            <a href="#" class="feedback__adres">ул. Большая Конюшенная, 19/8</a>
-          </li>
-        </ul>
-        <div class="map">
-          <img src="https://via.placeholder.com/150x150">
-        </div>
+      <div class="feedback__text">
+        <p class="feedback__subtitle">Остались вопросы? Свяжитесь с нами!</p>
+      </div>
+      <ul class="feedback__list">
+        <li class="feedback__item">
+          <span class="feedback__item-text">Звоните:</span>
+          <a href="tel:+78125556666" class="feedback__link feedback__tel">+7 (812) 555-66-66</a>
+        </li>
+        <li class="feedback__item">
+          <span class="feedback__item-text">Пишите:</span>
+          <a href="mailto:mail@htmlacademy.ru" class="feedback__link feedback__email">mail@htmlacademy.ru</a>
+        </li>
+        <li class="feedback__item">
+          <span class="feedback__item-text">Приезжайте в гости:</span>
+          <a href="#" class="feedback__link feedback__adres">ул. Большая Конюшенная, 19/8</a>
+        </li>
+      </ul>
+      <div class="feedback__map">
+        <img src="https://via.placeholder.com/150x150">
       </div>
     </section>
   </main>
 
   <footer class="page__footer footer">
-    <div class="footer-logo">
+    <div class="footer__logo">
       <img src="https://via.placeholder.com/150x150">
     </div>
-    <div class="footer-social">
-      <ul class="footer-social__list">
-        <li class="footer-social__item footer-social__item--twiter"></li>
-        <li class="footer-social__item footer-social__item--facebook"></li>
-        <li class="footer-social__item footer-social__item--youtube"></li>
+    <div class="footer__social">
+      <ul class="footer__list">
+        <li class="footer__item footer__item--twiter"></li>
+        <li class="footer__item footer__item--facebook"></li>
+        <li class="footer__item footer__item--youtube"></li>
       </ul>
     </div>
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-developer">
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer">
       Разработано
     </a>
   </footer>
 </body>
+
 </html>
