@@ -1,119 +1,133 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page__body">
-  <header class="page-header container">
-    <div class="intro">
-      <div class="page-header__head">
-        <a class="head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
-        <button class="head-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__main-inform">
+        <div class="page-header__head">
+          <a class="page-header__head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
+          <button class="page-header__head-toggle" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+        <h2 class="page-header__intro-heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__list-item"><a href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__list-item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__list-item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
-        </ul>
-      </nav>
-      <h2 class="intro__heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
-    </div>
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">PINK Фильтры против серых будней</h1>
 
     <section class="main-form">
       <div class="container">
-        <h2 class="form-heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <h2 class="main-form__form-heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
+          на вашу бонусную карту!</h2>
         <form class="form" method="get" action="https://echo.htmlacademy.ru" id="main-form">
-          <fieldset class="main-form__worksheet worksheet">
+          <fieldset class="form__worksheep">
             <legend class="visually-hidden">Анкета</legend>
 
-            <label class="worksheep__label" for="surname">Фамилия</label>
-            <input class="worksheep__input" type="text" name="surname" id="surname" required="required" placeholder="Укажите фамилию *">
+            <label class="form__worksheep-label" for="surname">Фамилия</label>
+            <input class="form__worksheep-input" type="text" name="surname" id="surname" required="required"
+              placeholder="Укажите фамилию *">
 
-            <label class="worksheep__label" for="name">Имя</label>
-            <input class="worksheep__input" type="text" name="name" id="name" required="required" placeholder="Введите ваше имя *">
+            <label class="form__worksheep-label" for="name">Имя</label>
+            <input class="form__worksheep-input" type="text" name="name" id="name" required="required"
+              placeholder="Введите ваше имя *">
 
-            <label class="worksheep__label" for="patronymic">Отчество</label>
-            <input class="worksheep__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            <label class="form__worksheep-label" for="patronymic">Отчество</label>
+            <input class="form__worksheep-input" type="text" name="patronymic" id="patronymic"
+              placeholder="Ну и отчество тоже">
           </fieldset>
 
-          <fieldset class="achievements">
-            <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="form__achievements">
+            <legend class="form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
 
-            <input class="achievements__input" type="checkbox" name="selfi" id="selfi" checked="checked">
-            <label class="achievements__label" for="selfi">Сделал селфи с акулой</label>
+            <input class="form__achievements-input" type="checkbox" name="selfi" id="selfi" checked="checked">
+            <label class="form__achievements-label" for="selfi">Сделал селфи с акулой</label>
 
-            <input class="achievements__input" type="checkbox" name="burnt" id="burnt" checked="checked">
-            <label class="achievements__label" for="burnt">Обгорел на пляже</label>
+            <input class="form__achievements-input" type="checkbox" name="burnt" id="burnt" checked="checked">
+            <label class="form__achievements-label" for="burnt">Обгорел на пляже</label>
 
-            <input class="achievements__input" type="checkbox" name="saw-chuck" id="saw-chuck">
-            <label class="achievements__label" for="saw-chuck">Видел Чака Норриса</label>
+            <input class="form__achievements-input" type="checkbox" name="saw-chuck" id="saw-chuck">
+            <label class="form__achievements-label" for="saw-chuck">Видел Чака Норриса</label>
 
-            <input class="achievements__input" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
-            <label class="achievements__label" for="bought-souvenirs">Накупил сувениров</label>
+            <input class="form__achievements-input" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
+            <label class="form__achievements-label" for="bought-souvenirs">Накупил сувениров</label>
 
-            <input class="achievements__input" type="checkbox" name="held-tower" id="held-tower" checked="checked">
-            <label class="achievements__label" for="held-tower">Удержал башню</label>
+            <input class="form__achievements-input" type="checkbox" name="held-tower" id="held-tower" checked="checked">
+            <label class="form__achievements-label" for="held-tower">Удержал башню</label>
 
-            <input class="achievements__input" type="checkbox" name="destroyed-hotel" id="destroyed-hotel">
-            <label class="achievements__label" for="destroyed-hotel">Разгромил отель</label>
+            <input class="form__achievements-input" type="checkbox" name="destroyed-hotel" id="destroyed-hotel">
+            <label class="form__achievements-label" for="destroyed-hotel">Разгромил отель</label>
           </fieldset>
 
-          <fieldset class="feedback">
+          <fieldset class="form__feedback">
             <legend class="visually-hidden">Контактные данные</legend>
 
-            <label class="feedback__label" for="tel">Номер телефона</label>
-            <input class="feedback__input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+            <label class="form__feedback-label" for="tel">Номер телефона</label>
+            <input class="form__feedback-input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
 
-            <label class="feedback__label" for="email">Адрес почты</label>
-            <input class="feedback__input" type="email" name="email" id="email" required="required" placeholder="Введите почту *">
+            <label class="form__feedback-label" for="email">Адрес почты</label>
+            <input class="form__feedback-input" type="email" name="email" id="email" required="required"
+              placeholder="Введите почту *">
           </fieldset>
 
-          <fieldset class="about-app">
-            <legend class="about-app__legend">С каким приложением путешествовали?</legend>
+          <fieldset class="form__about-app">
+            <legend class="form__about-app-legend">С каким приложением путешествовали?</legend>
 
-            <input class="about-app__input" type="radio" name="app" checked="checked" id="ios" value="ios">
-            <label class="about-app__label" for="ios">Pink для iOS</label>
+            <input class="form__about-app-input" type="radio" name="app" checked="checked" id="ios" value="ios">
+            <label class="form__about-app-label" for="ios">Pink для iOS</label>
 
-            <input class="about-app__input" type="radio" name="app" id="android" value="android">
-            <label class="about-app__label" for="android">Pink на Android</label>
+            <input class="form__about-app-input" type="radio" name="app" id="android" value="android">
+            <label class="form__about-app-label" for="android">Pink на Android</label>
 
-            <input class="about-app__input" type="radio" name="app" id="windows" value="windows">
-            <label class="about-app__label" for="windows">Windows Phone</label>
+            <input class="form__about-app-input" type="radio" name="app" id="windows" value="windows">
+            <label class="form__about-app-label" for="windows">Windows Phone</label>
           </fieldset>
 
-          <fieldset class="emotion">
-            <legend class="emotion__legend">Опишите свои эмоции</legend>
-            <textarea class="emotion__text" placeholder="Можно прям в красках, не стесняясь в выражениях" form="main-form"></textarea>
+          <fieldset class="form__emotion">
+            <legend class="form__emotion-legend">Опишите свои эмоции</legend>
+            <textarea class="form__emotion-text" placeholder="Можно прям в красках, не стесняясь в выражениях"
+              form="main-form"></textarea>
           </fieldset>
 
-          <button class="form-button" type="submit">Отправить форму</button>
+          <button class="form__button" type="submit">Отправить форму</button>
         </form>
-        <div class="comment">* — обязательные поля</div>
+        <div class="main-form__comment">* — обязательные поля</div>
       </div>
     </section>
   </main>
 
   <footer class="page__footer footer">
-    <div class="footer-logo">
-      <img src="https://via.placeholder.com/150x150">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="https://via.placeholder.com/150x150">
+      </div>
+      <div class="footer__social">
+        <ul class="footer__list">
+          <li class="footer__item footer__item--twiter"></li>
+          <li class="footer__item footer__item--facebook"></li>
+          <li class="footer__item footer__item--youtube"></li>
+        </ul>
+      </div>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer">
+        Разработано
+      </a>
     </div>
-    <div class="footer-social">
-      <ul class="footer-social__list">
-        <li class="footer-social__item footer-social__item--twiter"><a href="#"><span class="visyalli-hidden">Twitter</span></a></li>
-        <li class="footer-social__item footer-social__item--facebook"><a href="#"><span class="visyalli-hidden">Facebook</span></a></li>
-        <li class="footer-social__item footer-social__item--youtube"><a href="#"><span class="visyalli-hidden">Youtube</span></a></li>
-      </ul>
-    </div>
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-developer">
-      Разработано
-    </a>
   </footer>
 </body>
+
 </html>
