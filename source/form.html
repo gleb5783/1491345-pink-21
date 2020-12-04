@@ -10,14 +10,14 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
-      <div class="page-header__main-inform">
-        <div class="page-header__head">
-          <a class="page-header__head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
+    <div class="page-header__main-inform">
+      <div class="container">
+        <div class="page-header__head page-header__head--over">
+          <a class="page-header__head-logo" href="index.html">PINK</a>
           <button class="page-header__head-toggle" type="button"><span class="visually-hidden">Открыть
               меню</span></button>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--hide">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Главная</a></li>
             <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
@@ -25,8 +25,13 @@
             <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
           </ul>
         </nav>
-        <h2 class="page-header__intro-heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
+      <div class="page-header__intro">
+        <div class="container">
+          <h2 class="page-header__intro-heading">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
+      </div>
+    </div>
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">PINK Фильтры против серых будней</h1>
@@ -35,10 +40,12 @@
       <div class="container">
         <h2 class="main-form__form-heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
           на вашу бонусную карту!</h2>
-        <form class="form" method="get" action="https://echo.htmlacademy.ru" id="main-form">
-          <fieldset class="form__worksheep">
-            <legend class="visually-hidden">Анкета</legend>
+      </div>
+      <form class="form" method="get" action="https://echo.htmlacademy.ru" id="main-form">
+        <fieldset class="form__worksheep">
 
+          <legend class="visually-hidden">Анкета</legend>
+          <div class="container">
             <label class="form__worksheep-label" for="surname">Фамилия</label>
             <input class="form__worksheep-input" type="text" name="surname" id="surname" required="required"
               placeholder="Укажите фамилию *">
@@ -50,9 +57,11 @@
             <label class="form__worksheep-label" for="patronymic">Отчество</label>
             <input class="form__worksheep-input" type="text" name="patronymic" id="patronymic"
               placeholder="Ну и отчество тоже">
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form__achievements">
+        <fieldset class="form__achievements">
+          <div class="container">
             <legend class="form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
 
             <input class="form__achievements-input" type="checkbox" name="selfi" id="selfi" checked="checked">
@@ -72,9 +81,11 @@
 
             <input class="form__achievements-input" type="checkbox" name="destroyed-hotel" id="destroyed-hotel">
             <label class="form__achievements-label" for="destroyed-hotel">Разгромил отель</label>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form__feedback">
+        <fieldset class="form__feedback">
+          <div class="container">
             <legend class="visually-hidden">Контактные данные</legend>
 
             <label class="form__feedback-label" for="tel">Номер телефона</label>
@@ -83,9 +94,11 @@
             <label class="form__feedback-label" for="email">Адрес почты</label>
             <input class="form__feedback-input" type="email" name="email" id="email" required="required"
               placeholder="Введите почту *">
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form__about-app">
+        <fieldset class="form__about-app">
+          <div class="container">
             <legend class="form__about-app-legend">С каким приложением путешествовали?</legend>
 
             <input class="form__about-app-input" type="radio" name="app" checked="checked" id="ios" value="ios">
@@ -96,16 +109,21 @@
 
             <input class="form__about-app-input" type="radio" name="app" id="windows" value="windows">
             <label class="form__about-app-label" for="windows">Windows Phone</label>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="form__emotion">
+        <fieldset class="form__emotion">
+          <div class="container">
             <legend class="form__emotion-legend">Опишите свои эмоции</legend>
             <textarea class="form__emotion-text" placeholder="Можно прям в красках, не стесняясь в выражениях"
               form="main-form"></textarea>
-          </fieldset>
+          </div>
+        </fieldset>
 
           <button class="form__button" type="submit">Отправить форму</button>
-        </form>
+
+      </form>
+      <div class="container">
         <div class="main-form__comment">* — обязательные поля</div>
       </div>
     </section>
