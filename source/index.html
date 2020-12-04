@@ -3,27 +3,35 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body container">
+<body class="page__body">
   <header class="page-header">
     <div class="page-header__main-inform">
-      <div class="page-header__head">
-        <a class="page-header__head-logo" href="index.html"> <img src="https://via.placeholder.com/150x150"></a>
-        <button class="page-header__head-toggle" type="button"><span class="visually-hidden">Открыть
-            меню</span></button>
+      <div class="container">
+        <div class="page-header__head page-header__head--over">
+          <a class="page-header__head-logo" href="index.html">PINK</a>
+          <button class="page-header__head-toggle" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
+        </div>
+        <nav class="main-nav main-nav--hide">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
-        </ul>
-      </nav>
-      <p class="page-header__slogan">Взгляни на жизнь иначе!</p>
+      <div class="page-header__slogan page-header__slogan--big">
+        <div class="container">
+          <p class="page-header__slogan-text">Взгляни на жизнь иначе!</p>
+        </div>
+      </div>
+
       <a href="#" class="page-header__download-button">Скачать приложение</a>
       <div class="page-header__social">
         <a href="#" class="page-header__social-apple">
@@ -69,6 +77,7 @@
               новых</p>
           </li>
         </ul>
+        <img src="img/phone-main.png">
       </div>
     </section>
 
@@ -177,7 +186,7 @@
         </li>
       </ul>
       <div class="feedback__map">
-        <img src="https://via.placeholder.com/150x150">
+        <img src="img/map.jpg">
       </div>
     </section>
   </main>
