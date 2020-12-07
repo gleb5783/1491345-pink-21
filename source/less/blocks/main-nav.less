@@ -1,19 +1,25 @@
 .main-nav {
   background-color: @blue;
-    &--hide {
-      display: none;
-    }
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-nav__item {
+  padding: 24px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.20);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  text-align: center;
 }
 
 .main-nav__item a {
   text-decoration-line: none;
   color: @white;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
 }
