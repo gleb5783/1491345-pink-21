@@ -5,3 +5,14 @@
   text-decoration: none;
   color: @blue;
 }
+
+.footer__flex-box {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 320px) and (max-width: 659px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
