@@ -1,11 +1,48 @@
 .page-header {
   background-color: @blue;
+  position: relative;
+  @media (min-width: 660px) {
+    background-image: url("../../img/hend.png"), url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 660px 545px, cover;
+    background-position: 100% 100%, center center;
+  }
 }
 
 .page-header__head {
   background-color: @black;
   opacity: 0.3;
-  padding: 22px 0;
+  min-height: 66px;
+  @media (min-width: 660px) {
+    min-height: 110px;
+  }
+  @media (min-width: 940px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__head .container {
+  display: flex;
+  min-height: 66px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__main-inform {
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @media (min-width: 660px) {
+    background-image: none;
+  }
+}
+
+.page-header__head-toggle {
+  @media (min-width: 940px) {
+    display: none;
+  }
 }
 
 .page-header__slogan-phone {
@@ -14,6 +51,10 @@
   min-height: 396px;
   background-position: left bottom;
   background-repeat: no-repeat;
+  @media (min-width: 660px) {
+    min-height: 619px;
+    background-image: none;
+  }
 }
 
 .page-header__slogan {
@@ -21,15 +62,22 @@
   line-height: 29px;
   color: @white;
   font-weight: 300;
-  background-image: url("../../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+
+  @media (min-width: 660px) {
+    background-image: none;
+  }
 }
 
 .page-header__slogan-text {
   margin: 0;
   padding: 36px 0;
+}
+
+.page-header__download-wrap {
+  @media (min-width: 660px) {
+    position: absolute;
+    top: 378px;
+  }
 }
 
 .page-header__download-button {
