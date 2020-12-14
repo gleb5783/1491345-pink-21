@@ -1,5 +1,5 @@
 .benefits__main-features {
-  background-image: url("../../img/phone-main.png"), url("../../img/grey-back.png");
+  background-image: url("../img/phone-main.png"), url("../img/grey-back.png");
   background-repeat: no-repeat;
   background-position: 50% 110%, 0 10%;
   padding-top: 86px;
@@ -7,12 +7,14 @@
   background-size: 157px 320px, cover;
 
   @media (min-width: 660px) {
-    background-position: 0 50%, 0 -80px;
-    padding-top: 86px;
+    background-position: 0 30px, 0 -80px;
+    padding: 130px 0 0 0;
+    background-size: 269px 547px, cover;
+    overflow-x: hidden;
   }
 
   @media (min-width: 940px) {
-    background-image: url("../../img/grey-back.png");
+    background-image: url("../img/grey-back.png");
     background-size: cover;
     background-position: 0 -90px;
     padding-bottom: 0;
@@ -77,12 +79,29 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 0 20px;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+
+  @media (min-width: 960px) {
+    text-align: center;
+  }
 }
 
 .benefits__item-text {
+  text-align: center;
   color: @blue;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+
+  @media (min-width: 960px) {
+    text-align: center;
+  }
 }

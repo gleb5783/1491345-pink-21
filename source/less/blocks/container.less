@@ -1,13 +1,17 @@
 .container {
+  position: relative;
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: 660px) {
-    width: 660px;
+    min-width: 660px;
+    max-width: 939px;
+    width: 100%;
   }
 
   @media (min-width: 940px) {
     width: 940px;
+    padding: 0;
   }
 }
