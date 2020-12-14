@@ -1,5 +1,10 @@
 .main-picture__link {
   text-decoration-line: none;
+  width: 100%;
+}
+
+.main-picture__link-pic {
+  width: 100%;
 }
 
 .main-picture__picture-tip {
@@ -9,8 +14,15 @@
   font-weight: 700;
   line-height: 24px;
   padding: 13px 20px 14px 19px;
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: @red;
   text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    top: 57px;
+  }
 }
 
 .main-picture__information {
