@@ -1,28 +1,31 @@
 .benefits__main-features {
   background-image: url("../img/phone-main.png"), url("../img/grey-back.png");
   background-repeat: no-repeat;
-  background-position: 50% 110%, 0 10%;
-  padding-top: 86px;
-  padding-bottom: 330px;
+  background-position: 50% 110%, 0 -42px;
+  padding-bottom: 0;
   background-size: 157px 320px, cover;
+  min-height: 786px;
+
 
   @media (min-width: 660px) {
     background-position: 0 30px, 0 -80px;
-    padding: 130px 0 0 0;
     background-size: 269px 547px, cover;
     overflow-x: hidden;
+    min-height: auto;
   }
 
   @media (min-width: 940px) {
     background-image: url("../img/grey-back.png");
     background-size: cover;
-    background-position: 0 -90px;
+    background-position: 0 6%;
     padding-bottom: 0;
+    min-height: 608px;
   }
 }
 
 .benefits__intro {
   background-color: @white;
+  margin: 46px 0 38px 0;
 }
 
 .benefits__phone {
@@ -30,6 +33,7 @@
 
   @media (min-width: 940px) {
     display: block;
+    margin: 0 0 59px 0;
   }
 }
 
@@ -41,12 +45,20 @@
   font-size: 24px;
   line-height: 120%;
   color: @blue;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 54px;
+  }
 }
 
 .benefits__list {
   list-style: none;
   display: flex;
   flex-direction: column;
+  padding-top: 86px;
 
   @media (min-width: 660px) {
     padding-left: 310px;
@@ -80,13 +92,19 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  margin: 0;
+  height: 14px;
 
   @media (min-width: 660px) {
     text-align: left;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 940px) {
     text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
   }
 }
 
@@ -96,12 +114,20 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin: 24px 0 43px 0;
+  min-width: 280px;
+  height: 58px;
 
   @media (min-width: 660px) {
     text-align: left;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 940px) {
     text-align: center;
+    padding: 35px 20px 59px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
   }
 }

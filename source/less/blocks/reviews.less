@@ -1,10 +1,16 @@
 .reviews {
   background-color: @white;
 
+  @media (min-width: 660px) {
+    margin-top: 109px;
+  }
+
   @media (min-width: 940px) {
     background-image: url("../../img/quotes.png");
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 72px;
+    min-height: 405px;
+    margin: 0;
   }
 }
 
@@ -12,6 +18,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: 940px) {
+    padding-top: 193px;
+  }
 }
 
 .reviews__item-heading {
@@ -19,9 +29,20 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  margin: 50px 0 31px 0;
 
   @media (min-width: 660px) {
     order: 2;
+    margin: 51px 0 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media (min-width: 940px) {
+    font-size: 24px;
   }
 }
 
@@ -41,6 +62,15 @@
   @media (min-width: 660px) {
     display: block;
     order: 3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media (min-width: 940px) {
+    font-size: 18px;
   }
 }
 
@@ -49,5 +79,79 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  margin: 0;
   text-align: center;
+
+  @media (min-width: 940px) {
+    width: 688px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.reviews__toggle-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-top: 44px;
+  margin-bottom: 41px;
+  gap: 19px;
+}
+
+.reviews__slider-toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: @blue;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reviews__slider-toggle--active {
+  border: 3px solid @blue;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background-color: @white;
+}
+
+.reviews__reviews-slider .reviews__slider-toggle {
+  @media (min-width: 940px) {
+    display: none;
+  }
+}
+
+
+.reviews__arrow {
+  background-color: @white;
+  border: none;
+  padding: 0;
+  width: 22px;
+  cursor: pointer;
+  height: 41px;
+  position: absolute;
+  outline: none;
+}
+
+.reviews__left {
+  top: 50%;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.reviews__right {
+  top: 50%;
+  right: 0;
 }

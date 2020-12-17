@@ -14,6 +14,24 @@
   line-height: 29px;
   color: @blue;
   text-align: center;
+  margin: 47px 0 45px 0;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 54px;
+  }
+
+  @media (min-width: 940px) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.feedback__subtitle {
+  margin: 0;
+  padding: 0;
 }
 
 .feedback__list {
@@ -21,11 +39,19 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin: 0;
+  gap: 31px;
 
   @media (min-width: 660px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  @media (min-width: 940px) {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -33,6 +59,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
+}
+
+.feedback__item-flex {
+  @media (min-width: 660px) {
+    flex-grow: 2;
+    width: 100%;
+  }
+
+  @media (min-width: 940px) {
+    width: 211px;
+    order: 1;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.feedback__item-order {
+  order: 2;
 }
 
 .feedback__item-text {
@@ -40,11 +85,28 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
+
+  @media (min-width: 940px) {
+    padding-bottom: 34px;
+  }
+}
+
+.feedback__adres {
+  padding: 0 50px;
 }
 
 .feedback__link {
   text-decoration: none;
   color: red;
+
+  &:hover {
+    color: @blue;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .feedback__map {

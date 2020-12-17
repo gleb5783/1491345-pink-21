@@ -1,9 +1,6 @@
 .page-header {
-  background-color: @blue;
-  position: relative;
-
-  @media (min-width: 660px) {
-    background-image: url("../img/back-mobile.jpg");
+  @media (min-width: 940px) {
+    background-image: url("../../img/back-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -11,150 +8,231 @@
 }
 
 .page-header__nav {
-  margin: 0;
-  padding: 0;
+  background-color: @blue;
+
+  @media (min-width: 940px) {
+    background-color: fade(@black, 30%);
+  }
 }
 
-.page-header__main-nav {
+.page-header__logo {
+  margin-left: 20px;
+  width: 74px;
+  height: 23px;
+  background-image: url("../../img/pink.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 660px) {
+    background-image: url("../../img/logotype-white-tablet.svg");
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: 940px) {
+    margin: 0;
+  }
+}
+
+.page-header__logo:hover {
+  background-image: url("../../img/pink-mob-hover.png");
+
+  @media (min-width: 660px) {
+    background-image: url("../../img/logo-hover.png");
+  }
+}
+
+.page-header__logo:active {
+  background-image: url("../../img/pink-mob-active.png");
+
+  @media (min-width: 660px) {
+    background-image: url("../../img/logo-active.png");
+  }
+}
+
+.page-header__btn {
+  position: relative;
+  margin-right: 20px;
+  background-color: @blue;
+  width: 23px;
+  height: 23px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &::before {
+    content: "";
+    width: 3px;
+    height: 23px;
+    top: 0;
+    left: 10px;
+    position: absolute;
+    background-color: @white;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    width: 3px;
+    height: 23px;
+    top: 0;
+    left: 10px;
+    position: absolute;
+    background-color: @white;
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before {
+    background-color: @red;
+  }
+
+  &:hover::after {
+    background-color: @red;
+  }
+
+  &:active::before {
+    opacity: 30%;
+  }
+
+  &:active::after {
+    opacity: 30%;
+  }
+
+  @media (min-width: 940px) {
+    display: none;
+  }
+}
+
+.page-header__top-line {
+  @media (min-width: 940px) {
+    display: flex;
+    justify-content: space-around;
+    min-height: 110px;
+    align-items: center;
+  }
+}
+
+.page-header__flex-box {
+  display: flex;
+  justify-content: space-between;
+  min-height: 69px;
+  align-items: center;
+  border-bottom: 1px solid @black;
+
+  @media (min-width: 660px) {
+    min-height: 109px;
+  }
+
+  @media (min-width: 940px) {
+    border: none;
+    min-height: 110px;
+  }
+}
+
+.page-header__list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 940px) {
+    flex-direction: row;
+    padding: 15px 0 0 0;
+    gap: 78px;
+    justify-content: space-between;
+  }
 }
 
 .page-header__item {
-  background-color: @blue;
-  padding: 23px 0;
-
-  @media (min-width: 940px) {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0;
-  }
-}
-
-.page-header__item .container {
+  min-height: 63px;
   display: flex;
-  justify-content: space-between;
-  height: 23px;
-
-  @media (min-width: 940px) {
-    height: 110px;
-  }
-}
-
-.page-header__list-desctop {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  min-width: 620px;
-  align-items: center;
-
-  @media (min-width: 320px) and (max-width: 939px) {
-    display: none;
-  }
-}
-
-.page-header__list-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: 940px) {
-    display: none;
-  }
-}
-
-.page-header__list-nav-item {
-  display: flex;
+  border-top: 1px solid fade(@black, 20%);
+  border-bottom: 1px solid @black;
   justify-content: center;
   align-items: center;
-  padding: 24px 0;
-  background-color: @blue;
-  border: 1px solid fade(@black, 5%);
+
+  @media (min-width: 940px) {
+    border: none;
+  }
 }
 
 .page-header__link {
   color: @white;
-  text-decoration-line: none;
+  text-decoration: none;
+  text-transform: uppercase;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
 }
 
-.page-header__head-logo {
-  display: flex;
-  align-items: center;
+.page-header__link:hover {
+  color: @red;
 }
 
-.page-header__main-inform {
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  @media (min-width: 660px) {
-    background-image: none;
-  }
-}
-
-.page-header__head-toggle {
-  width: 23px;
-  height: 23px;
-  background-color: @blue;
-  border: none;
-  outline: none;
-
-  @media (min-width: 940px) {
-    display: none;
-  }
-}
-
-.page-header__slogan-phone {
-  background-image: url("../img/hend.png");
-  background-size: 320px 286px;
-  min-height: 396px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-
-  @media (min-width: 660px) {
-    min-height: 619px;
-    background-position: 100% 100%;
-    background-size: 660px 545px;
-  }
-
-  @media (min-width: 940px) {
-    height: 743px;
-  }
+.page-header__link:active {
+  color: @white;
+  opacity: 30%;
 }
 
 .page-header__slogan {
-  font-size: 24px;
-  line-height: 29px;
-  color: @white;
-  font-weight: 300;
+  min-height: 396px;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -70px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
   @media (min-width: 660px) {
-    background-image: none;
+    background-image: url("../../img/hend-tablet.png"), url("../../img/back-tablet.jpg");
+    background-size: 660px 545px, cover;
+    background-position: 100% 100%, center;
+    min-height: 619px;
+  }
+
+  @media (min-width: 940px) {
+    background-image: url("../../img/hend-desktop.png");
+    background-position: 100% 100%;
+    background-size: 1050px 645px;
+    min-height: 744px;
   }
 }
 
-.page-header__slogan-text {
-  margin: 0;
-  padding: 36px 0;
-  text-align: center;
+.page-header__background {
+  background-image: url("../../img/hend.png");
+  background-size: 320px 286px;
+  min-height: 396px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 
   @media (min-width: 660px) {
-    text-align: center;
-    padding: 114px 0 0 0;
-    width: 300px;
+    position: absolute;
+    min-width: 300px;
+    background-image: none;
+    min-height: 619px;
+  }
+}
+
+.page-header__heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 29px;
+  text-align: center;
+  color: @white;
+  padding: 20px 60px 0;
+  margin: 0;
+
+  @media (min-width: 660px) {
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
     line-height: 48px;
+    width: 300px;
+    padding: 102px 20px 0 20px;
+    margin-left: 20px;
   }
 
   @media (min-width: 940px) {
@@ -162,32 +240,109 @@
     font-style: normal;
     font-weight: 300;
     line-height: 68px;
+    padding: 114px 20px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 160px;
+    width: 400px;
   }
 }
 
-.page-header__download-wrap {
-  @media (min-width: 660px) {
-    position: absolute;
-    top: 678px;
-    width: 100%;
-  }
-}
-
-.page-header__download-button {
+.page-header__link-btn {
   font-size: 18px;
+  font-style: normal;
   font-weight: 700;
   line-height: 18px;
+  text-align: center;
+  text-decoration: none;
   color: @white;
-  text-decoration-line: none;
+  min-width: 280px;
+  max-width: 300px;
+  border: 3px solid @white;
+  border-radius: 29px;
+  display: block;
+  margin-top: 25px;
+  padding: 17px 0;
+
+  &:hover {
+    color: @red;
+    background-color: @white;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: @white;
+  }
 }
 
-.page-header__social-text {
+.page-header__list-app {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.page-header__iphone {
+  background-image: url("../../img/apple-logo.svg");
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
+  display: block;
+}
+
+.page-header__android {
+  background-image: url("../../img/android-logo.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+  display: block;
+}
+
+.page-header__windows {
+  background-image: url("../../img/microsoft-logo.svg");
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
+  display: block;
+}
+
+.page-header__download-app {
+  background-color: @blue;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 660px) {
+    background-color: transparent;
+    width: 300px;
+    margin: 254px 20px 0;
+  }
+
+  @media (min-width: 940px) {
+    margin: 313px 20px 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 313px 140px 0;
+  }
+}
+
+.page-header__text {
+  margin: 22px 0 32px 0;
+  padding: 0 20px;
+  text-align: center;
   font-size: 14px;
+  font-style: normal;
   font-weight: 300;
   line-height: 24px;
   color: @white;
+  opacity: 0.34;
 }
-
 
 /* form.html */
 
