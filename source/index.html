@@ -11,32 +11,35 @@
 <body class="page__body">
   <header class="page-header">
     <nav class="page-header__nav">
-      <div class="page-header__top-line">
-        <div class="page-header__flex-box">
-          <a class="page-header__logo" href="#"></a>
-          <button type="button" class="page-header__btn page-header__btn--close"></button>
-        </div>
-        <ul class="page-header__list page-header__list--close">
-          <li class="page-header__item">
-            <a class="page-header__link" href="#">Главная</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="catalog.html">фотографии</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="page-header__item">
-            <a class="page-header__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="page-header__list">
+        <li class="page-header__top-line-item">
+          <a href="#" class="page-header__logo">
+            <span class="visually-hidden">Логотип приложения Pink</span>
+          </a>
+          <button type="button" class="page-header__toggle-btn page-header__toggle-btn--close"></button>
+        </li>
+        <li>
+          <ul class="page-header__list page-header__list-flex">
+            <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
+            <li class="page-header__item"><a class="page-header__link" href="catalog.html">Фотографии</a></li>
+            <li class="page-header__item"><a class="page-header__link" href="form.html">Конкурс</a></li>
+            <li class="page-header__item"><a class="page-header__link"
+                href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
+
     <div class="page-header__slogan">
-      <div class="page-header__background">
-        <h1 class="page-header__heading">Взляните на&nbsp;жизнь иначе!</h1>
+      <div class="container">
+        <div class="page-header__slogan-wraper">
+          <h1 class="page-header__heading">Взгляните на&nbsp;жизнь иначе!</h1>
+        </div>
       </div>
-      <div class="page-header__download-app">
+    </div>
+
+    <div class="page-header__download-app">
+      <div class="container">
         <a class="page-header__link-btn" href="">Скачать приложение</a>
         <ul class="page-header__list-app">
           <li class="page-header__item-app">
@@ -49,9 +52,11 @@
             <a class="page-header__windows" href="#"></a>
           </li>
         </ul>
-        <p class="page-header__text">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8
+        <p class="page-header__text">
+          Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS&nbsp;X, Windows&nbsp;8
         </p>
       </div>
+    </div>
     </div>
   </header>
   <main class="page__main">
@@ -61,39 +66,42 @@
     <section class="benefits">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="benefits__intro">
-        <p class="benefits__intro-text">Устали от серости мегаполиса?</p><br>
+        <p class="benefits__intro-text">Устали от серости мегаполиса?</p>
         <p class="benefits__intro-text">Нам есть, что вам<br> предложить!</p>
       </div>
       <div class="benefits__main-features">
-        <ul class="benefits__list container">
-          <li class="benefits__item">
-            <img class="benefits__phone" src="img/back-mob-1.png" width="300" height="302">
-            <h3 class="benefits__item-heading">Поднимает настроение</h3>
-            <p class="benefits__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько кликов!</p>
-          </li>
-          <li class="benefits__item">
-            <img class="benefits__phone" src="img/back-mob-2.png" width="300" height="302">
-            <h3 class="benefits__item-heading">Меняет мир вокруг</h3>
-            <p class="benefits__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
-          </li>
-          <li class="benefits__item">
-            <img class="benefits__phone" src="img/back-mob-3.png" width="300" height="302">
-            <h3 class="benefits__item-heading">Заводит новых друзей</h3>
-            <p class="benefits__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <img class="benefits__phone" src="img/back-mob-1.png" width="300" height="302">
+              <h3 class="benefits__item-heading">Поднимает настроение</h3>
+              <p class="benefits__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                несколько кликов!</p>
+            </li>
+            <li class="benefits__item">
+              <img class="benefits__phone" src="img/back-mob-2.png" width="300" height="302">
+              <h3 class="benefits__item-heading">Меняет мир вокруг</h3>
+              <p class="benefits__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                усилить&nbsp;эффект</p>
+            </li>
+            <li class="benefits__item">
+              <img class="benefits__phone" src="img/back-mob-3.png" width="300" height="302">
+              <h3 class="benefits__item-heading">Заводит новых&nbsp;друзей</h3>
+              <p class="benefits__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                новых</p>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <section class="fake-inform">
         <div class="container">
           <div class="fake-inform__news">
-            <h2 class="fake-inform__heading">Эфект на 24 часа!</h2>
+            <h2 class="fake-inform__heading">Эффект<br> на&nbsp;24&nbsp;часа!</h2>
             <p class="fake-inform__text">
-              Британские ученые провели исследования и&nbsp;доказали, что положительный эффект
-              от использования приложения длится целые сутки!
+              Британские ученые провели исследования
+              и&nbsp;доказали, что положительный эффект
+              от&nbsp;использования приложения длится целые сутки!
             </p>
             <a href="#" class="fake-inform__link">Узнать больше об исследовании</a>
           </div>
@@ -159,7 +167,7 @@
     <section class="price">
       <h2 class="visually-hidden">Наши тарифы</h2>
       <div class="price__wraper">
-        <table class="price__table">
+        <table class="price__table price__table-header">
           <tr>
             <th class="price__head price_head-hidden"></th>
             <th class="price__head">
@@ -215,15 +223,15 @@
           <tr>
             <td class="price__option price__option-text">Комментарии</td>
             <td class="price__option">
-              <span class="price__span-mob">Коментарии</span>
+              <span class="price__span-mob">Комментарии</span>
               <img class="price__option-check" src="img/no.svg" alt="Не входит в стоимость" width="27" height="27">
             </td>
             <td class="price__option">
-              <span class="price__span-mob">Коментарии</span>
+              <span class="price__span-mob">Комментарии</span>
               <img class="price__option-check" src="img/no.svg" alt="Не входит в стоимость" width="27" height="27">
             </td>
             <td class="price__option">
-              <span class="price__span-mob">Коментарии</span>
+              <span class="price__span-mob">Комментарии</span>
               <img class="price__option-check" src="img/yes.svg" alt="Входит в стоимость" width="31" height="21">
             </td>
           </tr>
@@ -243,15 +251,15 @@
           <p class="feedback__subtitle">Остались вопросы?<br> Свяжитесь с нами!</p>
         </div>
         <ul class="feedback__list">
-          <li class="feedback__item">
+          <li class="feedback__item feedback__item-1">
             <span class="feedback__item-text">Звоните:</span>
             <a href="tel:+78125556666" class="feedback__link feedback__tel">+7 (812) 555-66-66</a>
           </li>
-          <li class="feedback__item feedback__item-order">
+          <li class="feedback__item feedback__item-2">
             <span class="feedback__item-text">Пишите:</span>
             <a href="mailto:mail@htmlacademy.ru" class="feedback__link feedback__email">mail@htmlacademy.ru</a>
           </li>
-          <li class="feedback__item feedback__item-flex">
+          <li class="feedback__item feedback__item-3">
             <span class="feedback__item-text">Приезжайте в гости:</span>
             <a href="#" class="feedback__link feedback__adres">ул. Большая Конюшенная&nbsp;,&nbsp;19/8</a>
           </li>
@@ -259,10 +267,9 @@
       </div>
       <div class="feedback__map">
         <div class="feedback__top-img"></div>
-        <iframe
+        <iframe class="feedback__online-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715826557!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607535399156!5m2!1sru!2sru"
-          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>
@@ -285,10 +292,10 @@
           </li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer">
-          Разработано <svg class="footer__html" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27"
-            height="34">
+          Разработано <svg class="footer__html" width="27" height="34" viewBox="0 0 27 34"
+            xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
           </svg>
         </a>
       </div>

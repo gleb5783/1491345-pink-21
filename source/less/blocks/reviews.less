@@ -1,12 +1,13 @@
 .reviews {
   background-color: @white;
+  min-height: 347px;
 
   @media (min-width: 660px) {
-    margin-top: 109px;
+    margin-top: 0;
   }
 
   @media (min-width: 940px) {
-    background-image: url("../../img/quotes.png");
+    background-image: url("../img/quotes.png");
     background-repeat: no-repeat;
     background-position: 50% 72px;
     min-height: 405px;
@@ -20,7 +21,7 @@
   margin: 0;
 
   @media (min-width: 940px) {
-    padding-top: 193px;
+    padding-top: 174px;
   }
 }
 
@@ -29,11 +30,11 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  margin: 50px 0 31px 0;
+  margin: 45px 0 13px 0;
 
   @media (min-width: 660px) {
     order: 2;
-    margin: 51px 0 0;
+    margin: 36px 0 0;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -82,9 +83,15 @@
   margin: 0;
   text-align: center;
 
+  @media (min-width: 660px) {
+    font-size: 18px;
+    padding-top: 103px;
+  }
+
   @media (min-width: 940px) {
     width: 688px;
     font-size: 18px;
+    padding: 0;
     line-height: 30px;
   }
 }
@@ -94,9 +101,8 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  margin-top: 44px;
-  margin-bottom: 41px;
-  gap: 19px;
+  margin-top: 30px;
+  gap: 16px;
 }
 
 .reviews__slider-toggle {
@@ -133,6 +139,13 @@
   }
 }
 
+.reviews__reviews-slider {
+  min-height: 347px;
+
+  @media (min-width: 660px) {
+    min-height: auto;
+  }
+}
 
 .reviews__arrow {
   background-color: @white;
@@ -143,6 +156,10 @@
   height: 41px;
   position: absolute;
   outline: none;
+
+  @media (min-width: 320px) and (max-width: 939px) {
+    display: none;
+  }
 }
 
 .reviews__left {

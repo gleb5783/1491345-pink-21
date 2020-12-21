@@ -14,13 +14,14 @@
   line-height: 29px;
   color: @blue;
   text-align: center;
-  margin: 47px 0 45px 0;
+  margin: 42px 0 34px 0;
 
   @media (min-width: 660px) {
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
     line-height: 54px;
+    margin: 49px 0 32px 0;
   }
 
   @media (min-width: 940px) {
@@ -40,17 +41,18 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
-  gap: 31px;
+  gap: 18px;
 
   @media (min-width: 660px) {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 45px;
     justify-content: space-evenly;
   }
 
   @media (min-width: 940px) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
   }
 }
@@ -59,25 +61,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
 }
 
-.feedback__item-flex {
+.feedback__item-2 {
+  @media (min-width: 940px) {
+    order: 3;
+  }
+}
+
+.feedback__item-3 {
   @media (min-width: 660px) {
-    flex-grow: 2;
-    width: 100%;
+    width: 211px;
   }
 
   @media (min-width: 940px) {
-    width: 211px;
-    order: 1;
-    flex-grow: 1;
-    text-align: center;
+    order: 2;
   }
-}
-
-.feedback__item-order {
-  order: 2;
 }
 
 .feedback__item-text {
@@ -87,17 +86,26 @@
   line-height: 25px;
 
   @media (min-width: 940px) {
-    padding-bottom: 34px;
+    padding-bottom: 29px;
   }
 }
 
 .feedback__adres {
   padding: 0 50px;
+
+  @media (min-width: 940px) {
+    padding: 0;
+  }
 }
 
 .feedback__link {
   text-decoration: none;
   color: red;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
 
   &:hover {
     color: @blue;
@@ -111,14 +119,49 @@
 
 .feedback__map {
   position: relative;
+  min-width: 320px;
+  height: 200px;
+  margin-top: 34px;
+
+  @media (min-width: 660px) {
+    min-height: 374px;
+  }
+
+  @media (min-width: 940px) {
+    height: 502px;
+  }
 }
 
 .feedback__top-img {
-  background-image: url("../../img/white-back.svg");
+  background-image: url("../img/triangle-white-footer.png");
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 1439px 123px;
-  height: 123px;
+  background-position: 0 0;
+  height: 52px;
   width: 100%;
   position: absolute;
+
+  @media (min-width: 660px) {
+    height: 68px;
+    background-image: url("../img/triangle-white-tablet.png");
+  }
+
+  @media (min-width: 940px) {
+    height: 123px;
+    background-image: url("../img/triangle-white-desctop.png");
+  }
+}
+
+.feedback__online-map {
+  min-width: 320px;
+  max-width: 9400px;
+  width: 100%;
+  min-height: 200px;
+
+  @media (min-width: 660px) {
+    height: 374px;
+  }
+
+  @media (min-width: 940px) {
+    height: 502px;
+  }
 }
