@@ -1,12 +1,24 @@
 .price {
   background-color: @white;
-  background-image: url("../../img/grey-back.png");
+  background-image: url("../img/grey-background.svg");
   background-repeat: no-repeat;
-  background-position: 0 5%;
-  background-size: cover;
+  background-position: 50% -25px;
+  background-size: 1214px 506px;
   overflow-x: hidden;
   position: relative;
-  min-height: 534px;
+  min-height: 480px;
+
+  @media (min-width: 660px) {
+    background-size: 1200px 534px;
+    background-position: 0 20%;
+    min-height: 384px;
+  }
+
+  @media (min-width: 940px) {
+    min-height: 534px;
+    background-size: cover, 534px;
+    background-position: 0 7%;
+  }
 }
 
 .price__wraper {
@@ -14,27 +26,46 @@
   flex-direction: column;
   max-width: 940px;
   margin: 0 auto;
-  margin-top: 154px;
+  margin-top: 145px;
 
   @media (min-width: 660px) and (max-width: 939px) {
     max-width: 660px;
+    margin-top: 98px;
+    padding: 0 20px;
   }
 
   @media (min-width: 320px) and (max-width: 659px) {
     position: absolute;
     width: 840px;
+    margin-top: 95px;
     overflow-x: hidden;
-    transform: translateX(-258px);
+    transform: translateX(-260px);
+  }
+}
+
+.price__wraper .reviews__toggle-btn {
+  @media (min-width: 660px) {
+    display: none;
   }
 }
 
 .price__table {
   table-layout: auto;
+
+  @media (min-width: 660px) {
+    border-collapse: collapse;
+  }
+}
+
+.price__table-header {
+  @media (min-width: 660px) {
+    border-collapse: inherit;
+  }
 }
 
 .price__head {
   position: relative;
-  width: 233px;
+  width: 278px;
   height: 95px;
   text-transform: uppercase;
   padding: 0;
@@ -43,11 +74,13 @@
 
   @media (min-width: 660px) and (max-width: 939px) {
     width: 152px;
+    height: 75px;
+    padding: 10px 0;
   }
 }
 
 .price__option-text {
-  padding-left: 20px;
+  padding-left: 13px;
 
   @media (min-width: 320px) and (max-width: 659px) {
     display: none;
@@ -61,16 +94,28 @@
 }
 
 .price__text {
-  font-size: 24px;
   font-style: normal;
   font-weight: 300;
   line-height: 30px;
   padding: 8px 0 18px 0;
   margin: 0;
+
+  @media (min-width: 320px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 660px) {
+    padding: 0;
+    font-size: 18px;
+  }
+
+  @media (min-width: 940px) {
+    font-size: 24px;
+  }
 }
 
 .price__head:first-child {
-  background-color: @grey;
+  background-color: transparent;
 }
 
 .price__hit {
@@ -86,16 +131,24 @@
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+
+  @media (min-width: 600px) {
+    padding: 2px 0;
+    font-size: 16px;
+  }
+
+  @media (min-width: 320px) {
+    font-size: 16px;
+  }
 }
 
 .price__option {
-  width: 234px;
+  width: 278px;
   height: 59px;
   color: @blue;
   border-collapse: collapse;
   border: 1px solid @grey;
   background-color: @white;
-  padding-left: 20px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -104,16 +157,27 @@
   @media (min-width: 660px) and (max-width: 939px) {
     width: 152px;
     font-size: 14px;
+    height: 43px;
+    border: 2px solid @dark-grey;
   }
 }
 
 .price__option-check {
-  margin-left: 81px;
+  float: right;
+  margin-right: 17px;
+  display: inline-block;
   margin-top: 5px;
 
   @media (min-width: 660px) and (max-width: 939px) {
-    margin-left: 45px;
-    margin-top: 10px;
+    margin-left: 61px;
+    margin-top: 4px;
+    margin-right: 0;
+    float: none;
+  }
+
+  @media (min-width: 940px) {
+    float: none;
+    margin-left: 100px;
   }
 }
 
@@ -121,6 +185,19 @@
   display: none;
 
   @media (min-width: 320px) and (max-width: 659px) {
-    display: block;
+    display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+}
+
+.price__hit img {
+  @media (min-width: 660px) and (max-width: 939px) {
+    width: 61px;
+    height: 61px;
   }
 }
