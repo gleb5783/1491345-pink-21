@@ -113,8 +113,8 @@
   @media (min-width: 660px) {
     border: 2px solid @grey;
     padding: 0;
-    margin-top: 58px;
-    min-height: 561px;
+    margin-top: 65px;
+    min-height: 555px;
   }
 
   @media (min-width: 940px) {
@@ -180,9 +180,17 @@
   text-transform: uppercase;
   text-align: center;
   padding: 37px 30px 0;
+  margin: 0;
 
   @media (min-width: 660px) {
-    padding: 0;
+    padding: 0 20px;
+    background-color: @white;
+    margin: -7px auto 0;
+  }
+
+  @media (min-width: 940px) {
+    margin: -9px auto 0;
+    padding: 0 32px;
   }
 }
 
@@ -294,18 +302,20 @@
   display: flex;
   padding: 30px 20px 25px;
   margin: 0;
+  position: relative;
 
   @media (min-width: 660px) {
     border: 2px solid @grey;
     padding: 0;
-    min-height: 324px;
+    min-height: 311px;
+    margin-top: 13px;
   }
 
   @media (min-width: 940px) {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 176px;
+    min-height: 163px;
   }
 }
 
@@ -333,12 +343,21 @@
   @media (min-width: 660px) {
     display: block;
     text-align: center;
+    margin: -15px auto 0;
+    background-color: @white;
+    padding: 0 31px;
     color: @red;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
+  }
+
+  @media (min-width: 940px) {
+    position: absolute;
+    left: 36%;
+    right: 36%;
   }
 }
 
@@ -435,6 +454,7 @@
   @media (min-width: 940px) {
     max-width: 470px;
     margin-left: 23px;
+    margin-top: 46px;
   }
 }
 
@@ -473,12 +493,14 @@
   border: none;
   padding: 0 20px;
   margin: 0;
+  position: relative;
   min-height: 340px;
 
   @media (min-width: 660px) {
     padding: 0;
     border: 2px solid @grey;
-    min-height: 319px;
+    min-height: 299px;
+    margin-top: 19px;
   }
 
   @media (min-width: 940px) {
@@ -517,14 +539,18 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 39px;
+  margin: 0;
 
   @media (min-width: 660px) {
-    padding-top: 7px;
+
     line-height: 30px;
+    margin: -21px auto 0;
+    background-color: @white;
+    padding: 7px 25px 0;
   }
 
   @media (min-width: 940px) {
-    padding: 5px 0 0 1px;
+    padding: 5px 26px 1px;
   }
 }
 
@@ -612,12 +638,13 @@
   border: none;
   padding: 0 20px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
 
   @media (min-width: 660px) {
     border: 2px solid @grey;
     padding: 0;
-    margin-top: 59px;
+    margin-top: 66px;
   }
 
   @media (min-width: 940px) {
@@ -651,9 +678,12 @@
   line-height: 18px;
   text-align: center;
   padding-top: 38px;
+  margin: 0 auto;
 
   @media (min-width: 660px) {
-    padding-top: 0;
+    padding: 0 38px;
+    background-color: @white;
+    margin: -10px auto 0;
   }
 }
 
