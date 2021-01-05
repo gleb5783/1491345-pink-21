@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -207,10 +211,18 @@
   background-position: center;
   min-height: 396px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
   @media (min-width: 660px) {
     background-image: url("../img/back-tablet.jpg");
     min-height: 619px;
     background-position: 0 -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 940px) {
@@ -225,17 +237,31 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hend@2x.png");
+    background-size: 320px auto;
+  }
 
   @media (min-width: 660px) {
     min-height: 619px;
     background-image: url("../img/hend-tablet.png");
     background-position: -20px 74px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hend-tablet@2x.png");
+      background-size: 660px auto;
+    }
   }
 
   @media (min-width: 940px) {
     min-height: 743px;
     background-image: url("../img/hend-desktop.png");
     background-position: 18px 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hend-desctop@2x.png");
+      background-size: 1050px auto;
+    }
   }
 }
 

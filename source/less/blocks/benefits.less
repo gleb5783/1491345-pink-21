@@ -6,6 +6,9 @@
   background-size: 157px 320px, cover;
   min-height: 786px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/phone-main@2x.png"), url("../img/grey-back@2x.png");
+  }
 
   @media (min-width: 660px) {
     background-position: 19px 9px, 0 -80px;
@@ -14,6 +17,12 @@
     overflow-y: hidden;
     min-height: 487px;
     max-height: 487px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-main-tablet@2x.png"), url("../img/grey-back-tablet@2x.png");
+      background-size: 268px 547px, 1200px 695px;
+      background-position: 19px 9px, 50% -20px;
+    }
   }
 
   @media (min-width: 940px) {
@@ -22,6 +31,11 @@
     background-position: 0 6%;
     padding-bottom: 0;
     min-height: 608px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/grey-back-desctop@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -47,7 +61,9 @@
   display: none;
 
   @media (min-width: 940px) {
-    display: block;
+    display: inline;
+    width: 300px;
+    height: auto;
   }
 }
 
