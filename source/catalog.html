@@ -148,8 +148,11 @@
     <section class="main-filter">
       <div class="container">
         <div class="main-filter__flex-box">
-          <img class="main-filter__pic" src="img/filter-pic.jpg" alt="Картинка для наложения фильтров" width="280"
-            height="374">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/filter-pic-tablet@2x.jpg">
+            <img class="main-filter__pic" src="img/filter-pic.jpg" srcset="img/filter-pic-mob@2x.jpg"
+              alt="Картинка для наложения фильтров" width="280" height="374">
+          </picture>
           <div class="main-filter__filter">
             <ul class="main-filter__list">
               <li class="main-filter__item">
@@ -221,7 +224,7 @@
     <div class="container">
       <div class="footer__flex-box">
         <a href="#">
-          <img src="img/footer-logo.png" width="145" height="40" alt="Логотип Pink">
+          <img src="img/logotype-blue-tablet.svg" width="145" height="40" alt="Логотип Pink">
         </a>
         <ul class="footer__list">
           <li class="footer__item">

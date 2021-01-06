@@ -10,14 +10,26 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-pic-mob@2x.jpg");
+  }
+
   @media (min-width: 660px) {
     background-image: url("../img/panorama-tablet.jpg");
     min-height: 509px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/panorama-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 940px) {
-    background-image: url("../../img/panorama-desktop.jpg");
+    background-image: url("../img/panorama-desktop.jpg");
     min-height: 506px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/panorama-desktop@2x.jpg");
+    }
   }
 }
 
