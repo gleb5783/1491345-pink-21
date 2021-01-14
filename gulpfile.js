@@ -4,7 +4,22 @@ const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const imagemin = require("gulp-imagemin");
 const sync = require("browser-sync").create();
+
+//Images
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  .pipe(imagemin([
+    imagemin.mozjpeg({progressive: true}),
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.svgo()
+  ]))
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.images = images;
 
 // Styles
 
