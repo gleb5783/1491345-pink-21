@@ -88,25 +88,35 @@
   }
 }
 
-.page-header__mob-logo {
-  @media (min-width: 660px) {
+.page-header__form-desktop-logo {
+  @media (min-width: 320px) and (max-width: 659px) {
+    margin: -17px 0 0 -72px;
+  }
+}
+
+.glases-star {
+  @media (min-width: 320px) and (max-width: 939px) {
     display: none;
   }
 }
 
-.page-header__tablet-logo {
-  display: none;
+.stars {
+  @media (min-width: 320px) and (max-width: 939px) {
+    display: none;
+  }
+}
+
+.glases {
+  @media (min-width: 320px) and (max-width: 659px) {
+    display: none;
+  }
 
   @media (min-width: 660px) and (max-width: 939px) {
     display: block;
   }
-}
-
-.page-header__desktop-logo {
-  display: none;
 
   @media (min-width: 940px) {
-    display: block;
+    display: none;
   }
 }
 
