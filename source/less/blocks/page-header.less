@@ -215,62 +215,43 @@
 }
 
 .page-header__slogan {
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/hend.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 320px auto, cover;
+  background-position: left bottom, 0 -65px;
   min-height: 396px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-mobile@2x.jpg");
+    background-image: url("../../img/hend@2x.png"), url("../img/back-mobile@2x.jpg");
+    background-size: 320px auto, cover;
   }
 
   @media (min-width: 660px) {
-    background-image: url("../img/back-tablet.jpg");
+    background-image: url("../img/hend-tablet.png"), url("../img/back-tablet.jpg");
     min-height: 619px;
-    background-position: 0 -110px;
+    background-position: right bottom, 0 -110px;
+    background-size: 660px auto, cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-tablet@2x.jpg");
+      background-image: url("../img/hend-tablet@2x.png"), url("../img/back-tablet@2x.jpg");
     }
   }
 
   @media (min-width: 940px) {
     background-image: none;
-    min-height: 743px;
   }
 }
 
 .page-header__slogan-wraper {
-  min-height: 396px;
-  background-image: url("../img/hend.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/hend@2x.png");
-    background-size: 320px auto;
-  }
-
-  @media (min-width: 660px) {
-    min-height: 619px;
-    background-image: url("../img/hend-tablet.png");
-    background-position: -20px 74px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hend-tablet@2x.png");
-      background-size: 660px auto;
-    }
-  }
-
   @media (min-width: 940px) {
-    min-height: 743px;
     background-image: url("../img/hend-desktop.png");
+    background-size: 1050px auto;
+    min-height: 743px;
     background-position: 18px 100%;
+    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hend-desctop@2x.png");
-      background-size: 1050px auto;
     }
   }
 }
@@ -304,7 +285,7 @@
 .page-header__download-app {
   min-height: 271px;
   background-color: @blue;
-  padding-top: 32px;
+  padding-top: 28px;
 
   @media (min-width: 660px) {
     margin-top: -352px;

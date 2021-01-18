@@ -61,6 +61,37 @@
   }
 }
 
+.footer__logo {
+  display: block;
+  fill: @blue;
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__logo-mob-tablet {
+  display: block;
+
+  @media (min-width: 940px) {
+    display: none;
+  }
+}
+
+.footer__logo-desctop {
+  @media (min-width: 280px) and (max-width: 939px) {
+    display: none;
+  }
+
+  @media (min-width: 940px) {
+    display: block;
+  }
+}
+
 .footer__list {
   list-style: none;
   margin: 36px 0 40px 0;
