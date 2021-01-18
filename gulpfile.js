@@ -27,7 +27,7 @@ const images = () => {
 
 exports.images = images;
 
-//HTML 
+//HTML
 
 const html = () => {
   return gulp.src("source/*.html")
@@ -86,7 +86,7 @@ exports.copy = copy;
 const clean = () => {
   return del("build");
 }
- 
+
 //Sprite
 
 const sprite = () => {
@@ -96,7 +96,7 @@ const sprite = () => {
   .pipe(gulp.dest("build/img"));
 }
 
-exports.sprite = sprite; 
+exports.sprite = sprite;
 
 // Server
 
@@ -141,4 +141,3 @@ const build = gulp.series(
 )
 
 exports.build = build;
-
