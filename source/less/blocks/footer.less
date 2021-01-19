@@ -61,9 +61,47 @@
   }
 }
 
+.footer-mob-red-glases {
+  @media (min-width: 940px) {
+    display: none;
+  }
+}
+
+.footer-pink {
+  display: block;
+}
+
+.footer-red-star {
+  @media (min-width: 320px) and (max-width: 939px) {
+    display: none;
+  }
+
+  @media (min-width: 940px) {
+    display: block;
+  }
+}
+
+.footer-glases {
+  @media (min-width: 320px) and (max-width: 939px) {
+    display: none;
+  }
+}
+
+.footer-black-star {
+  @media (min-width: 320px) and (max-width: 939px) {
+    display: none;
+  }
+
+  @media (min-width: 940px) {
+    display: block;
+  }
+}
+
 .footer__logo {
   display: block;
   fill: @blue;
+  width: 147px;
+  height: 40px;
 
   &:hover {
     fill: @red;
@@ -71,24 +109,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.footer__logo-mob-tablet {
-  display: block;
-
-  @media (min-width: 940px) {
-    display: none;
-  }
-}
-
-.footer__logo-desctop {
-  @media (min-width: 280px) and (max-width: 939px) {
-    display: none;
-  }
-
-  @media (min-width: 940px) {
-    display: block;
   }
 }
 
