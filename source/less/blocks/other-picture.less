@@ -56,6 +56,8 @@
   background-color: @grey;
   padding-top: 18px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: 660px) {
     padding-top: 23px;
@@ -113,6 +115,7 @@
 
   @media (min-width: 660px) {
     padding-left: 30px;
+    min-height: 48px;
   }
 
   @media (min-width: 940px) {
@@ -149,13 +152,11 @@
   }
 
   @media (min-width: 660px) {
-    position: absolute;
-    bottom: 23px;
-    left: -18px;
+    margin: 12px 0 0 30px;
   }
 
   @media (min-width: 940px) {
-    left: -21px;
+    margin: 12px 0 0 27px;
   }
 }
 

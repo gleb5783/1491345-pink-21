@@ -1,0 +1,48 @@
+.page-header__bottom-line {
+    @media (min-width: 320px) and (max-width: 939px) {
+        &--close {
+            display: none;
+        }    
+    }
+}
+
+.page-header__top-line-item {
+    @media (min-width: 320px) and (max-width: 939px) {
+        &--close {
+            position: absolute;
+            background-color: fade(@black, 30%);
+            width: 100%;
+            border: none;
+        }    
+    }
+}
+
+.page-header__slogan {
+    @media (min-width: 320px) and (max-width: 659px) {
+        &--close {
+            min-height: 462px;
+            background-position: left bottom, 0 0;
+        }    
+    }
+
+    @media (min-width: 660px) and (max-width: 939px) {
+        &--close {
+            min-height: 729px;
+            background-position: right bottom, 0 0;
+        }    
+    }
+}
+
+.page-header__heading {
+    @media (min-width: 320px) and (max-width: 659px) {
+        &--close {
+            padding: 95px 0 0;
+        }    
+    }
+
+    @media (min-width: 660px) and (max-width: 939px) {
+        &--close {
+            padding: 212px 0 0;
+        }    
+    }
+}

@@ -201,3 +201,48 @@
     height: 61px;
   }
 }
+
+.price__toggle-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-top: 30px;
+  gap: 16px;
+}
+
+.price__slider-toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: @blue;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.price__slider-toggle--active {
+  border: 3px solid @blue;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background-color: @white;
+}
+
+.price__btn-group {
+  margin-top: 418px;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
+}

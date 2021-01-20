@@ -88,7 +88,7 @@
       <g class="footer-red-star">
         <path
           d="M98.9401 9.74577C97.9749 9.74578 97.0491 9.36951 96.3656 8.69946C95.6822 8.02942 95.2969 7.12028 95.2942 6.17139C95.2942 7.11937 94.9111 8.02853 94.2293 8.69886C93.5474 9.36919 92.6226 9.74577 91.6583 9.74577C92.6235 9.74839 93.5483 10.1272 94.2299 10.7991C94.9115 11.471 95.2942 12.3811 95.2942 13.33C95.2969 12.3802 95.6818 11.4701 96.365 10.7985C97.0482 10.1268 97.974 9.74838 98.9401 9.74577Z"
-          fill="#D22856"/>
+          fill="#D22856" />
       </g>
       <g class="footer-glases">
         <path
@@ -111,20 +111,23 @@
   <header class="page-header-catalog">
     <nav class="page-header-catalog__nav">
       <ul class="page-header-catalog__list">
+        <!--Нужно копировать закоментированные классы к каждому элементу, чтобы получить реализацию закрытого меню-->
+        <!--page-header-catalog__top-line-item--close-->
         <li class="page-header-catalog__top-line-item">
           <a href="index.html" class="page-header-catalog__logo">
-            <svg class="page-header__catalog-desktop-logo" width="147" height="40">
+            <svg class="page-header-catalog__desktop-logo" width="147" height="40">
               <use xlink:href="#header-desktop-logo"></use>
             </svg>
             <span class="visually-hidden">Логотип приложения Pink</span>
           </a>
           <button type="button" class="page-header-catalog__toggle-btn page-header-catalog__toggle-btn--close"></button>
         </li>
-        <li>
+        <!--page-header-catalog__bottom-line--close-->
+        <li class="page-header-catalog__bottom-line">
           <ul class="page-header-catalog__list page-header-catalog__list-flex">
             <li class="page-header-catalog__item"><a class="page-header-catalog__link" href="index.html">Главная</a>
             </li>
-            <li class="page-header-catalog__item"><a class="page-header-catalog__link page-header-catalog__item--active"
+            <li class="page-header-catalog__item"><a class="page-header-catalog__link page-header-catalog__link--active"
                 href="#">Фотографии</a></li>
             <li class="page-header-catalog__item"><a class="page-header-catalog__link" href="form.html">Конкурс</a></li>
             <li class="page-header-catalog__item"><a class="page-header-catalog__link"
@@ -133,8 +136,10 @@
         </li>
       </ul>
     </nav>
+    <!--page-header-catalog__catalog-heading--close-->
     <div class="page-header-catalog__catalog-heading">
       <div class="container">
+        <!--page-header-catalog__catalog-main-heading--close-->
         <h1 class="page-header-catalog__catalog-main-heading">Фотографии <br> пользователей</h1>
       </div>
     </div>
@@ -195,8 +200,10 @@
             </picture>
           </a>
           <div class="other-picture__user-card-inf">
-            <span class="other-picture__user-card-name">Левон</span>
-            <span class="other-picture__user-card-status">(5 часов назад)</span>
+            <div>
+              <span class="other-picture__user-card-name">Левон</span>
+              <span class="other-picture__user-card-status">(5 часов назад)</span>
+            </div>
             <p class="other-picture__user-text">Вчера он на луну летал, сегодня в руки&nbsp;к нам попал.</p>
             <div class="other-picture__like">Нравится: 356</div>
           </div>
@@ -217,8 +224,10 @@
             </picture>
           </a>
           <div class="other-picture__user-card-inf-small">
-            <span class="other-picture__user-card-name">Антон</span>
-            <span class="other-picture__user-card-status">(12 часов назад)</span>
+            <div>
+              <span class="other-picture__user-card-name">Антон</span>
+              <span class="other-picture__user-card-status">(12 часов назад)</span>
+            </div>
             <p class="other-picture__user-text">Соседи будут рады!</p>
             <div class="other-picture__like">Нравится: 666</div>
           </div>
@@ -239,8 +248,10 @@
             </picture>
           </a>
           <div class="other-picture__user-card-inf">
-            <span class="other-picture__user-card-name">Борис</span>
-            <span class="other-picture__user-card-status">(20 часов назад)</span>
+            <div>
+              <span class="other-picture__user-card-name">Борис</span>
+              <span class="other-picture__user-card-status">(20 часов назад)</span>
+            </div>
             <p class="other-picture__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="other-picture__like">Нравится: 215</div>
           </div>
@@ -261,8 +272,10 @@
             </picture>
           </a>
           <div class="other-picture__user-card-inf-small">
-            <span class="other-picture__user-card-name">Сергей</span>
-            <span class="other-picture__user-card-status">(25 часов назад)</span>
+            <div>
+              <span class="other-picture__user-card-name">Сергей</span>
+              <span class="other-picture__user-card-status">(25 часов назад)</span>
+            </div>
             <p class="other-picture__user-text">Самая кубанская в мире!</p>
             <div class="other-picture__like">Нравится: 4</div>
           </div>
@@ -283,8 +296,10 @@
             </picture>
           </a>
           <div class="other-picture__user-card-inf-small">
-            <span class="other-picture__user-card-name">Максим</span>
-            <span class="other-picture__user-card-status">(40 часов назад)</span>
+            <div>
+              <span class="other-picture__user-card-name">Максим</span>
+              <span class="other-picture__user-card-status">(40 часов назад)</span>
+            </div>
             <p class="other-picture__user-text">Где снег-то?</p>
             <div class="other-picture__like">Нравится: 150</div>
           </div>
@@ -305,8 +320,10 @@
             </picture>
           </a>
           <div class="other-picture__user-card-inf-small">
-            <span class="other-picture__user-card-name">Надежда</span>
-            <span class="other-picture__user-card-status">(45 часов назад)</span>
+            <div>
+              <span class="other-picture__user-card-name">Надежда</span>
+              <span class="other-picture__user-card-status">(45 часов назад)</span>
+            </div>
             <p class="other-picture__user-text">Всем GM и взаимные лайки!</p>
             <div class="other-picture__like">Нравится: 2560</div>
           </div>
@@ -324,18 +341,21 @@
       </div>
     </section>
 
-    <section class="main-filter">
+    <section class="main-filter main__main-filter">
       <h2 class="visually-hidden">Фильтр фотографий</h2>
       <div class="container">
-        <div class="main-filter__flex-box">
-          <picture>
-            <source type="image/webp" media="(min-width: 660px)"
-              srcset="img/filter-pic-tablet.webp 1x, img/filter-pic-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/filter-pic.webp 1x, img/filter-pic-mob@2x.webp 2x">
-            <source media="(min-width: 660px)" srcset="img/filter-pic-tablet.jpg 1x, img/filter-pic-tablet@2x.jpg 2x">
-            <img class="main-filter__pic" src="img/filter-pic.jpg" srcset="img/filter-pic-mob@2x.jpg"
-              alt="Картинка для наложения фильтров" width="280" height="374">
-          </picture>
+        <form class="main-filter__flex-box" action="https://echo.htmlacademy.ru" method="get">
+          <label for="add-img">
+            <input type="file" name="add-img" id="add-img" class="visually-hidden">
+            <picture>
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/filter-pic-tablet.webp 1x, img/filter-pic-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/filter-pic.webp 1x, img/filter-pic-mob@2x.webp 2x">
+              <source media="(min-width: 660px)" srcset="img/filter-pic-tablet.jpg 1x, img/filter-pic-tablet@2x.jpg 2x">
+              <img class="main-filter__pic" src="img/filter-pic.jpg" srcset="img/filter-pic-mob@2x.jpg"
+                alt="Картинка для наложения фильтров" width="280" height="374">
+            </picture>
+          </label>
           <div class="main-filter__filter">
             <ul class="main-filter__list">
               <li class="main-filter__item">
@@ -397,7 +417,7 @@
               <button class="main-filter__cancel-btn" type="button" disabled>Отмена</button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
       <div class="main-filter__mob-line"></div>
     </section>
