@@ -53,6 +53,7 @@
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
 
   @media (min-width: 660px) {
@@ -79,31 +80,22 @@
 }
 
 .main-filter__crop {
-  border: none;
+  background-image: url("../img/crop.svg");
+  background-repeat: no-repeat;
+  display: block;
   cursor: pointer;
-  padding-left: 37px;
-  background-color: transparent;
-
-  @media (min-width: 660px) {
-    padding-left: 9px;
-    padding-top: 9px;
-  }
-
-  @media (min-width: 940px) {
-    padding-top: 17px;
-  }
-}
-
-.main-filter__svg-crop {
-  fill: @red;
+  width: 44px;
+  height: 44px;
 
   @media (min-width: 660px) {
     width: 22px;
     height: 22px;
-    fill: @red;
+    margin: 29px 6px 0 9px;
+    background-image: url("../img/crop-tablet.svg");
   }
 
   @media (min-width: 940px) {
+    background-image: url("../img/crop.svg");
     width: 44px;
     height: 44px;
   }
@@ -143,34 +135,25 @@
 }
 
 .main-filter__fill {
-  border: none;
+  background-image: url("../img/fill.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 43px;
   cursor: pointer;
-  padding-left: 29px;
-  background-color: transparent;
+  display: block;
 
   @media (min-width: 660px) {
-    padding: 9px 0 0 8px;
-  }
-
-  @media (min-width: 940px) {
-    padding: 6px 0 0 8px;
-  }
-}
-
-.main-filter__svg-fill {
-  fill: @blue;
-  opacity: 0.3;
-
-  @media (min-width: 660px) {
+    margin: 27px 0 0 8px;
     width: 24px;
     height: 22px;
-    fill: @red;
-    opacity: 1;
+    background-image: url("../img/fill-tablet.svg");
   }
 
   @media (min-width: 940px) {
+    background-image: url("../img/fill-desctop.svg");
     width: 48px;
     height: 43px;
+    margin: 15px 0 0 9px;
   }
 }
 
@@ -208,17 +191,25 @@
 }
 
 .main-filter__contrast {
-  border: none;
+  display: block;
+  background-image: url("../img/contrast.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
-  background-color: transparent;
-  padding-left: 29px;
 
   @media (min-width: 660px) {
-    padding: 3px 0 0 12px;
+    margin: 26px 0 0 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/contrast-tablet.svg");
   }
 
   @media (min-width: 940px) {
-    padding: 17px 0 0 15px;
+    background-image: url("../img/contrast-desctop.svg");
+    width: 32px;
+    height: 32px;
+    margin: 18px 0 0 15px;
   }
 }
 
@@ -273,7 +264,7 @@
 }
 
 .main-filter__mob-list {
-  margin: 35px 0 0;
+  margin: 40px 0 0;
   padding: 0;
   list-style: none;
   display: flex;

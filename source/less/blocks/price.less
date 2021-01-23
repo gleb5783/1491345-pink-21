@@ -1,23 +1,17 @@
 .price {
-  background-color: @white;
-  background-image: url("../img/grey-background.svg");
-  background-repeat: no-repeat;
-  background-position: 50% -25px;
-  background-size: 1214px 506px;
+  background: linear-gradient(178deg, @white 33px, @grey 34px);
   overflow-x: hidden;
   position: relative;
   min-height: 480px;
 
   @media (min-width: 660px) {
-    background-size: 1200px 534px;
-    background-position: 0 20%;
+    background: linear-gradient(178deg, @white 33px, @grey 34px);
     min-height: 384px;
   }
 
   @media (min-width: 940px) {
     min-height: 534px;
-    background-size: cover, 534px;
-    background-position: 0 7%;
+    background: linear-gradient(178deg, @white 94px, @grey 95px);
   }
 }
 
